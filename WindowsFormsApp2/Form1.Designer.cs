@@ -28,90 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workspace = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type_A = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type_c = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(140, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Delete User";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(233, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 22);
-            this.textBox2.TabIndex = 2;
-            // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(233, 89);
+            this.textBox3.Location = new System.Drawing.Point(855, 24);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 22);
+            this.textBox3.Size = new System.Drawing.Size(139, 22);
             this.textBox3.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(140, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Update User";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(233, 165);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(191, 22);
-            this.textBox5.TabIndex = 12;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(233, 195);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(191, 22);
-            this.textBox6.TabIndex = 13;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(12, 75);
+            this.button6.Location = new System.Drawing.Point(638, 7);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 48);
+            this.button6.Size = new System.Drawing.Size(177, 62);
             this.button6.TabIndex = 16;
-            this.button6.Text = "button6";
+            this.button6.Text = "Видалити робітника";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 140);
+            this.button7.Location = new System.Drawing.Point(195, 7);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(122, 47);
+            this.button7.Size = new System.Drawing.Size(177, 62);
             this.button7.TabIndex = 17;
-            this.button7.Text = "button7";
+            this.button7.Text = "Оновити данні робітника";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -129,27 +87,17 @@
             this.type_b,
             this.type_c});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 223);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 127);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(982, 367);
+            this.dataGridView1.Size = new System.Drawing.Size(982, 582);
             this.dataGridView1.TabIndex = 22;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 62);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Додати користувача";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // id
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.id.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.id.DefaultCellStyle = dataGridViewCellStyle11;
             this.id.HeaderText = "Ідентифікатор";
             this.id.MinimumWidth = 105;
             this.id.Name = "id";
@@ -158,8 +106,8 @@
             // 
             // surname
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.surname.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.surname.DefaultCellStyle = dataGridViewCellStyle12;
             this.surname.HeaderText = "Прізвище";
             this.surname.MinimumWidth = 150;
             this.surname.Name = "surname";
@@ -198,21 +146,48 @@
             this.type_c.ReadOnly = true;
             this.type_c.Width = 105;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(168, 62);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Додати користувача";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(821, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 24);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "ІД";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(391, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 60);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Оновити";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -224,13 +199,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -241,6 +210,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn type_A;
         private System.Windows.Forms.DataGridViewTextBoxColumn type_b;
         private System.Windows.Forms.DataGridViewTextBoxColumn type_c;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

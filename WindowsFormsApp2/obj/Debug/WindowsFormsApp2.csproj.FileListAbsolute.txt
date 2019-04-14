@@ -13,3 +13,4 @@ C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Windo
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ModalFormAddUser.resources
+C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UpdateUser.resources

@@ -55,25 +55,36 @@ namespace WindowsFormsApp2
 
         private void button6_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            string sql = "delete from men where id = @id";
-            MySqlCommand command = new MySqlCommand(sql, conn);
-            command.Parameters.AddWithValue("id", textBox3.Text);
-            command.ExecuteNonQuery();
-            conn.Close();
-            refetch_database();
+            if (textBox3.Text.Length != 0)
+            {
+                DialogResult result = MessageBox.Show("Ви дійсно хочете видалити робітника", "Підтверження операції", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    conn.Open();
+                    string sql = "delete from men where id = @id";
+                    MySqlCommand command = new MySqlCommand(sql, conn);
+                    command.Parameters.AddWithValue("id", textBox3.Text);
+                    command.ExecuteNonQuery();
+                    conn.Close();
+                    refetch_database();
+                    textBox3.Text = "";
+                }
+                else textBox3.Text = "";
+            }
+            else MessageBox.Show("Ви не вказали ідентифиікатор для видалення");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            conn.Open();
-           /* string sql = "update men set age = @age, name = @name where id = @id";
-            MySqlCommand command = new MySqlCommand(sql, conn);
-            command.Parameters.AddWithValue("id", textBox2.Text);
-            command.Parameters.AddWithValue("age", textBox5.Text);
-            command.Parameters.AddWithValue("name", textBox6.Text);
-            command.ExecuteNonQuery();
-            conn.Close();*/
+            /* string sql = "update men set age = @age, name = @name where id = @id";
+             MySqlCommand command = new MySqlCommand(sql, conn);
+             command.Parameters.AddWithValue("id", textBox2.Text);
+             command.Parameters.AddWithValue("age", textBox5.Text);
+             command.Parameters.AddWithValue("name", textBox6.Text);
+             command.ExecuteNonQuery();
+             conn.Close();*/
+            UpdateUser updateUserModal = new UpdateUser();
+            updateUserModal.ShowDialog();
             refetch_database();
         }
        
@@ -82,6 +93,11 @@ namespace WindowsFormsApp2
         {
             ModalFormAddUser addUserModal = new ModalFormAddUser();
             addUserModal.ShowDialog();
+            refetch_database();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             refetch_database();
         }
     }

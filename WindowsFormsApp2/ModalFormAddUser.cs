@@ -39,5 +39,49 @@ namespace WindowsFormsApp2
         {
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+                MessageBox.Show("Будь ласка, вводьте тільки літери.");
+                    textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Будь ласка, вводьте тільки цілі числа.");
+                textBox2.Text = textBox2.Text.Remove(textBox2.Text.Length - 1);
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Будь ласка, вводьте тільки цілі числа.");
+                textBox3.Text = textBox3.Text.Remove(textBox3.Text.Length - 1);
+            }
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox4.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Будь ласка, вводьте тільки цілі числа.");
+                textBox4.Text = textBox1.Text.Remove(textBox4.Text.Length - 1);
+            }
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox5.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Будь ласка, вводьте тільки цілі числа.");
+                textBox5.Text = textBox5.Text.Remove(textBox5.Text.Length - 1);
+            }
+        }
     }
 }
