@@ -4,7 +4,6 @@ C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\bin\Release\Win
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\bin\Release\MySql.Data.dll
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\bin\Release\Google.Protobuf.dll
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\bin\Release\MySql.Data.xml
-C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.Form1.resources
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.Properties.Resources.resources
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.csproj.GenerateResource.cache
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.csproj.CoreCompileInputs.cache
@@ -12,3 +11,5 @@ C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\Win
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.exe
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.pdb
 C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.Form1.resources
+C:\Users\Илья\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Release\WindowsFormsApp2.ModalFormAddUser.resources
