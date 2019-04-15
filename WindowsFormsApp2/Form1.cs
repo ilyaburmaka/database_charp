@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
+using System.Data.SqlClient;
 namespace WindowsFormsApp2
 {
   
@@ -21,6 +21,10 @@ namespace WindowsFormsApp2
         public Form1()
         {
             InitializeComponent();
+            saveFileDialog1.FileName = "file-test";
+            saveFileDialog1.DefaultExt = "docx";
+            saveFileDialog1.Filter = "Word Doc (*.docx)|*.docx|All files (*.*)|*.*";
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -76,13 +80,6 @@ namespace WindowsFormsApp2
 
         private void button7_Click(object sender, EventArgs e)
         {
-            /* string sql = "update men set age = @age, name = @name where id = @id";
-             MySqlCommand command = new MySqlCommand(sql, conn);
-             command.Parameters.AddWithValue("id", textBox2.Text);
-             command.Parameters.AddWithValue("age", textBox5.Text);
-             command.Parameters.AddWithValue("name", textBox6.Text);
-             command.ExecuteNonQuery();
-             conn.Close();*/
             UpdateUser updateUserModal = new UpdateUser();
             updateUserModal.ShowDialog();
             refetch_database();
@@ -99,6 +96,24 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             refetch_database();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+             if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+                 return;
+             string filename = saveFileDialog1.FileName;
+             System.IO.File.WriteAllText(filename, "test");
+             MessageBox.Show("Файл сохранен");
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Будь ласка, вводьте тільки цілі числа.");
+                textBox3.Text = textBox3.Text.Remove(textBox3.Text.Length - 1);
+            }
         }
     }
   

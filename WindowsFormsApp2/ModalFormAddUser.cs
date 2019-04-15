@@ -25,13 +25,21 @@ namespace WindowsFormsApp2
             conn.Open();
             string sql = "insert into men (id,surname,workshop_number,count_of_product_A,count_of_product_B,count_of_product_C) values (null,@surname,@workshop_number,@count_a,@count_b,@count_c)";
             MySqlCommand command = new MySqlCommand(sql, conn);
-            command.Parameters.AddWithValue("surname", textBox1.Text);
-            command.Parameters.AddWithValue("workshop_number", textBox2.Text);
-            command.Parameters.AddWithValue("count_a", textBox3.Text);
-            command.Parameters.AddWithValue("count_b", textBox4.Text);
-            command.Parameters.AddWithValue("count_c", textBox5.Text);
-            command.ExecuteNonQuery();
-            conn.Close();
+            if (textBox1.Text.Length == 0 || textBox2.Text.Length == 0 || textBox3.Text.Length == 0 || textBox4.Text.Length == 0 || textBox5.Text.Length == 0)
+            {
+
+                command.Parameters.AddWithValue("surname", textBox1.Text);
+                command.Parameters.AddWithValue("workshop_number", textBox2.Text);
+                command.Parameters.AddWithValue("count_a", textBox3.Text);
+                command.Parameters.AddWithValue("count_b", textBox4.Text);
+                command.Parameters.AddWithValue("count_c", textBox5.Text);
+                command.ExecuteNonQuery();
+            }
+            else
+            {
+                MessageBox.Show("Ви не заповнили якесь поле. Будь ласка, уважніше.");
+            }
+                conn.Close();
             this.Close();
         }
 
@@ -42,8 +50,7 @@ namespace WindowsFormsApp2
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-                MessageBox.Show("Будь ласка, вводьте тільки літери.");
-                    textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
+               
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
